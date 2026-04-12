@@ -22,6 +22,25 @@ public class que1 {
         return count;
 
     }
+
+
+    static int tripletSum(int[] arr , int target){
+
+        int n = arr.length ; 
+        int ans = 0 ;
+
+        for( int i = 0 ; i< n ; i++){
+            for ( int j= i+1 ; j< n ; j++){
+                for( int k = j+1 ; k< n ; k++){
+                    if( arr[i] + arr[j] + arr[k] == target ){
+                        ans++ ;
+                    }
+
+                }
+            }
+        }
+        return ans;
+    }
     
 
     public static void main(String[] args){
@@ -43,8 +62,11 @@ public class que1 {
         System.out.println( " Enter the target value: ");
         target = sc.nextInt();
 
+        //for finding two pairs 
+        // System.out.println("Total number of pairs whose sum is equal to the target is : " + targetsum(arr, target));
 
-        System.out.println("Total number of pairs whose sum is equal to the target is : " + targetsum(arr, target));
+        //for finding 3 pairs equal to the target value in the array 
+        System.out.println("Total triplet pairs equal to the target value is : " + tripletSum(arr, target));
 
 
         
