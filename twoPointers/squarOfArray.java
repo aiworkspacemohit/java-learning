@@ -1,5 +1,5 @@
 package twoPointers;
-import java.util.*;
+import java.util.Scanner;
 import java.lang.Math;
 
 public class squarOfArray {
