@@ -4,7 +4,7 @@ package cd_practical;
  * Implementation of Syntax Directed Translation (SDT)
  * This class uses semantic rules to evaluate expressions with digits, +, and *.
  */
-public class SemanticRules { // Renamed to PascalCase
+public class semanticRules { // Renamed to PascalCase
 
     private String input;
     private int pos = -1, ch;
@@ -89,7 +89,7 @@ public class SemanticRules { // Renamed to PascalCase
 
     public static void main(String[] args) {
         // Constructor name now matches the Class name
-        SemanticRules evaluator = new SemanticRules();
+        semanticRules evaluator = new semanticRules();
         
         String expr1 = "10 + 5 * 2"; 
         String expr2 = "(10 + 5) * 2"; 
