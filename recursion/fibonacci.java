@@ -12,7 +12,7 @@ public class fibonacci {
 
         System.out.println("First nth fibonacci series : ");
         for(int i = 0 ; i< n ; i++){
-            System.out.println(fibo(i));
+            System.out.println(fibo(i)); 
         }
     }
 }
